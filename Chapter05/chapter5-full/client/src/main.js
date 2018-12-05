@@ -23,6 +23,7 @@ for (const key in filters) {
 async function main () {
   // Get user info
   try {
+    // state和fetch是Vue的两个插件库，fetch的运行是异步阻塞的，加上await可以是逻辑暂停等待结果
     state.user = await $fetch('user')
   } catch (e) {
     console.warn(e)
