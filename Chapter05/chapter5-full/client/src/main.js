@@ -18,6 +18,8 @@ for (const key in filters) {
   Vue.filter(key, filters[key])
 }
 
+// async function, await是ECMA 2017里定义的，用在这里可以作为Web服务器异步响应多个请求。下面是async文档：
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 async function main () {
   // Get user info
   try {
