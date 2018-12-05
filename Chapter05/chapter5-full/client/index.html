@@ -6,6 +6,8 @@
   </head>
   <body>
     <div id="app"></div>
-    <script src="/dist/build.js"></script> <!-- 这个文件在源代码中是找不到的，是通过webpack把若干JS文件打包而成，在webpack.config.js里配置 -->
+    <!-- 这个文件在源代码中是找不到的，是通过webpack把若干JS文件打包而成，在webpack.config.js里配置。
+         配置文件中有这么一行，表明了逻辑的入口：entry: './src/main.js', -->
+    <script src="/dist/build.js"></script>
   </body>
 </html>
