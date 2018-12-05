@@ -10,6 +10,7 @@
 npm install
 
 # npm run后面的参数是在package.json里定义的，定义了它们的行为，就像Makefile的作用
+# 这里很方便地启动了Web服务器，如果要完整运行这个demo，还需要启动../server的服务端
 # serve with hot reload at localhost:8080
 npm run dev
 
