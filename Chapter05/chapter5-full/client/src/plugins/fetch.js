@@ -1,7 +1,7 @@
 import state from '../state'
 import router from '../router'
 
-let baseUrl
+let baseUrl // let和var的区别是：let的作用范围是enclosing block，即一个大括号内，而var的作用范围是函数内。在这里是等价的。
 
 export async function $fetch (url, options) {
   const finalOptions = Object.assign({}, {
