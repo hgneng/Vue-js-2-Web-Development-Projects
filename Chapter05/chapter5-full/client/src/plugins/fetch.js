@@ -10,6 +10,8 @@ export async function $fetch (url, options) {
     },
     credentials: 'include',
   }, options)
+  
+  // 反引号``(backtick)是ECMAScript 2015里的语法，可以支持多行字符串，也可以支持模板字符串， ${变量名}可替换为变量值
   const response = await fetch(`${baseUrl}${url}`, finalOptions)
   if (response.ok) {
     const data = await response.json()
