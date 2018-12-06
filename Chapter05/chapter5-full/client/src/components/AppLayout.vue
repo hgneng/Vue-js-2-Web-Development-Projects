@@ -22,6 +22,8 @@ export default {
 }
 </script>
 
+<!-- stylus是一种扩展的CSS，通过npm模块可以编译成标准的CSS。@import语法在标准的CSS中也是支持的。
+     stylus允许在CSS中定义变量和函数，让样式文件编写更简洁灵活。 -->
 <style lang="stylus">
 @import '../style/main';
 </style>
