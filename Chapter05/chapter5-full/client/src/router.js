@@ -2,6 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import state from './state'
 
+// .vue文件是一些html模板，import语法是JS的标准语法，但是JS语法本身并不支持引用html，这个功能归功于
+// Babel(https://babeljs.io/)模块，让我们可以使用最新的JS语法，以及
+// Webpack打包工具让模块可以独立定义在一个单独的文件中，参考：https://vuejs.org/v2/guide/single-file-components.html
+// 可以认为，我们不再是在写纯JS代码，而是写另外一种语言的代码，然后通过编译器编译成JS代码
 import Home from './components/Home.vue'
 import FAQ from './components/FAQ.vue'
 import Login from './components/Login.vue'
