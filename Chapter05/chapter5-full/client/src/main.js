@@ -33,7 +33,7 @@ async function main () {
     el: '#app',
     data: state,
     router,
-    render: h => h(AppLayout),
+    render: h => h(AppLayout), // 这一句定义了HTML模板代码的入口位置在components/AppLayout.vue
   })
 }
 
