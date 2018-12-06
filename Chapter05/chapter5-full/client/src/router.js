@@ -31,6 +31,11 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  // 路由有3中模式：hash, history, abstract。
+  // hash是通过#实现的
+  // history是通过HTML5 history.pushState API实现的。不过在普通服务器中，如果打开一个单页应用的非首页的URL会返回404。
+  // 不过webpack server可以处理history模式，返回正确的页面。
+  // abstract可以被所有JS支持，在上面两种模式不支持的情况下会使用abstract模式。
   mode: 'history',
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
